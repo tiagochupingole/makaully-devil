@@ -1,19 +1,19 @@
-// 1. Seleciona o botão e o corpo da página no HTML
-const botao = document.getElementById('meuBotao');
-const corpoPagina = document.body;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-// 2. Função para gerar uma cor hexadecimal aleatória (ex: #FFA07A)
-function gerarCorAleatoria() {
-    const letras = '0123456789ABCDEF';
-    let cor = '#';
-    for (let i = 0; i < 6; i++) {
-        cor += letras[Math.floor(Math.random() * 16)];
-    }
-    return cor;
-}
+    <div class="conteudo">
+        <h1>Olá, Mundo!</h1>
+        <p>Este é o meu primeiro site interativo.</p>
+        <button id="meuBotao">Mudar Cor de Fundo</button>
+    </div>
 
-// 3. Adiciona o evento de clique ao botão
-botao.addEventListener('click', () => {
-    const novaCor = gerarCorAleatoria();
-    corpoPagina.style.backgroundColor = novaCor;
-});
+    <script src="script.js"></script>
+</body>
+</html>
